@@ -25,8 +25,12 @@ class MyApp extends StatelessWidget {
         canvasColor: Color.fromARGB(255, 231, 228, 194),
         fontFamily: 'Railway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyLarge: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
-              bodyMedium: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
+              bodyLarge: const TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
+              bodyMedium: const TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
               titleLarge: const TextStyle(
                 fontFamily: 'RobotoCondensed',
                 fontSize: 20,
