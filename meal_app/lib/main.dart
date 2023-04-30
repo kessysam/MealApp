@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/screens/filter_screen.dart';
 import 'package:meal_app/screens/meal_detail_screen.dart';
 
 import 'screens/categories_screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch().copyWith(
           secondary: Colors.green, //serves as accent color
         ),
-        canvasColor: Color.fromARGB(255, 231, 228, 194),
+        canvasColor: const Color.fromARGB(255, 231, 228, 194),
         fontFamily: 'Railway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyLarge: const TextStyle(
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
               titleMedium: const TextStyle(
                 fontFamily: 'RobotoCondensed',
                 fontSize: 22,
+                color: Colors.pink,
               ),
             ),
       ),
@@ -47,7 +49,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const TabsScreen(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
-        MealDetailScreen.routName: (context) => MealDetailScreen(),
+        MealDetailScreen.routName: (context) => const MealDetailScreen(),
+        FilterScreen.routeName: (context) => FilterScreen(),
       },
       // onGenerateRoute: (settings) {
       //   print(settings.arguments);
