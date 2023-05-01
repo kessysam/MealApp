@@ -31,6 +31,7 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
+            color: Colors.accents.last,
             child: const Text(
               'Cooking up!',
               style: TextStyle(
@@ -39,7 +40,6 @@ class MainDrawer extends StatelessWidget {
                 color: Colors.pink,
               ),
             ),
-            color: Colors.accents.last,
           ),
           const SizedBox(
             height: 30,
